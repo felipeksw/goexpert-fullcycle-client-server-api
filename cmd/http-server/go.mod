@@ -1,4 +1,4 @@
-module github.com/felipeksw/goexpert-fullcycle-client-server-api
+module github.com/felipeksw/goexpert-fullcycle-client-server-api/cmd/http-server
 
 go 1.20
 

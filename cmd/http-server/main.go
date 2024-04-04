@@ -96,9 +96,8 @@ func insertExchange(exch *exchangeUsdbrl) error {
 	// inicialização do banco de dados
 	db, err := gorm.Open(sqlite.Open("server.db"), &gorm.Config{})
 	if err != nil {
-		log.Fatal(err)
+		return err
 	}
-
 
 	err = db.AutoMigrate(&exchangeReqDTO{})
 	if err != nil {
